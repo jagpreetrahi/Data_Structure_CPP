@@ -3,25 +3,25 @@
 using namespace std;
 
 /* Brute Force */
-// vector <int> Intersection(vector <int> a , vector <int> b){
+vector <int> Intersection(vector <int> a , vector <int> b){
 
-//     int n1 = a.size();
-//     int n2 = b.size();
+    int n1 = a.size();
+    int n2 = b.size();
 
-//     vector <int> ans;
-//     int visitorArray[n2] = {0};
-//     for(int i = 0; i <n1; i++){
-//         for(int j =0; j<n2; j++){
-//            if(a[i] == b[j] && visitorArray[j] == 0 ){
-//                ans.push_back(a[i]);
-//                visitorArray[j] = 1;
-//                break;
-//            }
-//            if(b[j] > a[i]) break;
-//         }
-//     }
-//     return ans;
-//}
+    vector <int> ans;
+    int visitorArray[n2] = {0};
+    for(int i = 0; i <n1; i++){
+        for(int j =0; j<n2; j++){
+           if(a[i] == b[j] && visitorArray[j] == 0 ){
+               ans.push_back(a[i]);
+               visitorArray[j] = 1;
+               break;
+           }
+           if(b[j] > a[i]) break;
+        }
+    }
+    return ans;
+}
 /* Brute Force*/
 
 /* Optimal Solution  Two Pointer*/

@@ -4,28 +4,28 @@
 using namespace std;
 
 /* Brute Force */
-// vector <int> unionArray(vector <int> a , vector <int> b){
+vector <int> unionArray(vector <int> a , vector <int> b){
 
-//     int sizeOf_a = a.size();
-//     int sizeOf_b = b.size();
+    int sizeOf_a = a.size();
+    int sizeOf_b = b.size();
 
-//     set <int> st;
-//     for(int i = 0 ; i<sizeOf_a ; i++){
-//         st.insert(a[i]);
-//     }
+    set <int> st;
+    for(int i = 0 ; i<sizeOf_a ; i++){
+        st.insert(a[i]);
+    }
 
-//     for(int i = 0 ; i<sizeOf_b ; i++){
-//         st.insert(b[i]);
-//     }
+    for(int i = 0 ; i<sizeOf_b ; i++){
+        st.insert(b[i]);
+    }
 
-//     vector <int> temp;
+    vector <int> temp;
 
-//     for(auto it  : st){
-//         temp.push_back(it);
-//     }
+    for(auto it  : st){
+        temp.push_back(it);
+    }
 
-//     return temp ;
-// }
+    return temp ;
+}
 
 /* Brute Force */
 
